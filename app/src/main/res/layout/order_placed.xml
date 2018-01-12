@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="65dip"
+    android:fillViewport="true">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivCongratulations"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/cong_thumb"></ImageView>
+
+    <TextView
+        android:id="@+id/orderIdTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivCongratulations"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="Your order ID is"
+        android:layout_marginTop="16sp"
+        android:textSize="20sp"
+        android:textColor="@color/grey_700"/>
+
+    <TextView
+        android:id="@+id/orderId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderIdTitle"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/black_aa"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="765458"
+       />
+
+    <TextView
+        android:id="@+id/order_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderId"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="It will be ready in 15 min"
+        android:layout_marginTop="16sp"
+        android:textColor="@color/grey_700"
+        />
+
+    <Button
+        android:id="@+id/dialog_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24sp"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@+id/order_subtitle"
+        android:layout_centerHorizontal="true"
+        android:text="Aur Hungry Kya?"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/dialog_done"
+        android:layout_marginRight="5dp">
+
+        <ImageView
+            android:id="@+id/IvVuscreen"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/vuscreen_bg"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/vuScreenBgTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="Watch over 400hr free entertainment"
+            android:layout_marginTop="16sp"
+            android:textSize="20sp"
+            android:textColor="@color/black_aa"/>
+
+        <Button
+            android:id="@+id/vuScreen"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="24sp"
+            android:background="@drawable/rounded_button2"
+            android:layout_centerHorizontal="true"
+            android:text="Enjoy VuScreen"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"/>
+</LinearLayout>
+    </FrameLayout>
+</RelativeLayout>
+</ScrollView>
